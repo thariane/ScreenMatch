@@ -7,9 +7,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1970);
+        Filme meuFilme = new Filme("O poderoso chefão", 1970);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -27,14 +25,11 @@ public class Principal {
         Episodio episodio = new Episodio();
         episodio.setNumero(1);
         Serie outlander;
-        outlander = new Serie();
-        episodio.setSerie(outlander);
+        outlander = new Serie("outlander", 2016);
         episodio.setTotalVisualizacoes(300);
 
-        var filmeDoPaulo = new Filme();
+        var filmeDoPaulo = new Filme("Dogville", 2003);
         filmeDoPaulo.setDuracaoEmMinutos(200);
-        filmeDoPaulo.setNome("Dogville");
-        filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
 
         ArrayList<Filme> listDeFilmes = new ArrayList<>();
@@ -44,6 +39,7 @@ public class Principal {
         System.out.println("Primeiro filme " + listDeFilmes.get(0).getNome());
         System.out.println(listDeFilmes);
         System.out.println("toString do filme " + listDeFilmes.get(0).toString());
+
 
 
     }
