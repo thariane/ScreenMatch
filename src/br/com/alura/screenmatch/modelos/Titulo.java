@@ -9,7 +9,7 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
-    public Titulo(String nome, int anoDeLancamento) {
+    public Titulo() {
         this.nome = nome;
         this.anoDeLancamento = anoDeLancamento;
     }
@@ -48,7 +48,7 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    public void setNome(String nome) {
+    public void setNome(String nome, int anoDeLancamento) {
         this.nome = nome;
 
 
